@@ -5,3 +5,6 @@ cloudcraft.essentials.gamemode.number # specific perms
 cloudcraft.essentials.gamemode.others.* # all gamemode perms to apply gamemode to others
 cloudcraft.essentials.gamemode.others.number # specific perms to apply specific gamemode to others
 
+  ## Fly specific
+cloudcraft.essentials.fly # change fly for yourself
+cloudcraft.essentials.fly.others # change fly for others

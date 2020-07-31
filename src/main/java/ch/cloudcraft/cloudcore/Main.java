@@ -1,5 +1,6 @@
 package ch.cloudcraft.cloudcore;
 
+import ch.cloudcraft.cloudcore.Essentials.FlyExecutor;
 import ch.cloudcraft.cloudcore.Essentials.GamemodeExecutor;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -20,6 +21,7 @@ public class Main extends JavaPlugin {
         for (String cmd : str) {
             getCommand(cmd).setExecutor(new GamemodeExecutor());
         }
+        getCommand("fly").setExecutor(new FlyExecutor());
 
 
         System.out.println("Plugin enabled");
