@@ -1,5 +1,6 @@
 package ch.cloudcraft.cloudcore;
 
+import ch.cloudcraft.cloudcore.Essentials.GamemodeExecutor;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -13,6 +14,14 @@ public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         this.plugin = this;
+
+        // Gamemode
+        String[] str = {"gamemode", "gm0", "gm1", "gm2", "gm3"};
+        for (String cmd : str) {
+            getCommand(cmd).setExecutor(new GamemodeExecutor());
+        }
+
+
         System.out.println("Plugin enabled");
     }
 

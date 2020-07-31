@@ -6,15 +6,13 @@ description: A generic default description
 commands:
   gamemode:
     description: gamemode
-  gm:
-    description: gm 0/1/2/3
+    aliases: [gm]
   gm0:
-    description: gm0
-    aliases: [gmc]
+    aliases: [gms]
   gm1:
-    description: gm1
+    aliases: [gmc]
   gm2:
-    description: gm2
+    aliases: [gma]
   gm3:
-    description: gm3
+    aliases: [gmspc]
 
