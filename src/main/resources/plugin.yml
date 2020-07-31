@@ -1,0 +1,20 @@
+name: CloudCore
+main: ch.cloudcraft.cloudcore.Main
+author: HopeDev
+version: 1.0.0
+description: A generic default description
+commands:
+  gamemode:
+    description: gamemode
+  gm:
+    description: gm 0/1/2/3
+  gm0:
+    description: gm0
+    aliases: [gmc]
+  gm1:
+    description: gm1
+  gm2:
+    description: gm2
+  gm3:
+    description: gm3
+
