@@ -16,5 +16,6 @@ commands:
   gm3:
     aliases: [gmspc]
   fly:
+  kickall:
 
 

@@ -8,3 +8,7 @@ cloudcraft.essentials.gamemode.others.number # specific perms to apply specific 
   ## Fly specific
 cloudcraft.essentials.fly # change fly for yourself
 cloudcraft.essentials.fly.others # change fly for others
+
+  ## Kickall specific
+cloudcraft.essentials.kickall # execute a kickall
+cloudcraft.essentials.kickall.avoid #immune against kickalls (Staff?)
