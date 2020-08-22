@@ -1,7 +1,7 @@
-name: CloudCore
+name: CloudCore-Lobbybased
 main: ch.cloudcraft.cloudcore.Main
 author: HopeDev
-version: 1.0.0
+version: 1.2.2
 description: A generic default description
 commands:
   gamemode:
@@ -16,6 +16,9 @@ commands:
   gm3:
     aliases: [gmspc]
   fly:
-  kickall:
 
+  lobby:
+  build:
+  kickall:
+  testscoreboard:
 

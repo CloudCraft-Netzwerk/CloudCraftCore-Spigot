@@ -58,7 +58,7 @@ public class CoinManager {
             }
 
 
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

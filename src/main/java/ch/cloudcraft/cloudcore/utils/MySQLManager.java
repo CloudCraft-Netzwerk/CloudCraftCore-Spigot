@@ -19,6 +19,7 @@ public class MySQLManager {
         }
         return null;
     }
+
     public static ResultSet requestQuery(PreparedStatement statement) {
         try {
             return statement.executeQuery();
@@ -27,6 +28,7 @@ public class MySQLManager {
         }
         return null;
     }
+
     public static void execUpdate(String query) {
         try {
             getConnection().createStatement().executeUpdate(query);
@@ -34,6 +36,7 @@ public class MySQLManager {
             throwables.printStackTrace();
         }
     }
+
     public static void execUpdate(PreparedStatement statement) {
         try {
             statement.executeUpdate();
@@ -70,9 +73,10 @@ public class MySQLManager {
             throwables.printStackTrace();
         }
     }
+
     public static void openConnection() throws SQLException {
         connection = DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/" + database, username, password);
         execUpdate("CREATE TABLE IF NOT EXISTS money (PlayerUUID VARCHAR(200), moneyValue BIGINT);");
-        }
     }
+}
 
