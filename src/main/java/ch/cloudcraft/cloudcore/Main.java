@@ -59,6 +59,8 @@ public class Main extends JavaPlugin {
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new BuildPlaceListener(), this);
         getServer().getPluginManager().registerEvents(new onItemHotbar(), this);
+        getServer().getPluginManager().registerEvents(new ItemHandClick(), this);
+        getServer().getPluginManager().registerEvents(new MechanicsListener(), this);
         // ApplicationLoader.resolve();
 
 

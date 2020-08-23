@@ -3,6 +3,7 @@ main: ch.cloudcraft.cloudcore.Main
 author: HopeDev
 version: 1.2.2
 description: A generic default description
+depend: [LabyModAPI]
 commands:
   gamemode:
     description: gamemode
