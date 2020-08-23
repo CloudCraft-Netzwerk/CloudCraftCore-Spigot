@@ -1,12 +1,13 @@
 package ch.cloudcraft.cloudcore.Essentials;
 
+import ch.cloudcraft.cloudcore.LobbyCore.Methods.Methods;
 import org.bukkit.GameMode;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
 public class PlayerStateUpdate {
-    private static String Eprx = "§9[§r§o§bCloudEssentials§r§9] ";
+    private static String Eprx = Methods.getPrefix();
 
     public static void updateGamemode(CommandSender sender, Player target, GameMode gameMode, boolean responseOnOwn) {
         Player Psender = (Player) sender;

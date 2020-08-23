@@ -1,5 +1,6 @@
 package ch.cloudcraft.cloudcore.Essentials;
 
+import ch.cloudcraft.cloudcore.LobbyCore.Methods.Methods;
 import ch.cloudcraft.cloudcore.utils.QueryPlayer;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -7,7 +8,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class FlyExecutor implements CommandExecutor {
-    private static String Eprx = "§9[§r§o§bCloudEssentials§r§9] ";
+    private static String Eprx = Methods.getPrefix();
 
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] args) {

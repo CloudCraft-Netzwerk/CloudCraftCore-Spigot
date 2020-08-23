@@ -6,6 +6,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
+import org.bukkit.event.weather.WeatherChangeEvent;
 
 public class MechanicsListener implements Listener {
 
@@ -45,5 +46,10 @@ public class MechanicsListener implements Listener {
         } else {
             event.setFoodLevel(20);
         }
+    }
+
+    @EventHandler
+    public void onWeatherChange(WeatherChangeEvent event) {
+        event.setCancelled(true);
     }
 }

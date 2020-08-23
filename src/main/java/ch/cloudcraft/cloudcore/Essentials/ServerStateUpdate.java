@@ -1,10 +1,11 @@
 package ch.cloudcraft.cloudcore.Essentials;
 
+import ch.cloudcraft.cloudcore.LobbyCore.Methods.Methods;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
 public class ServerStateUpdate {
-    public static String Eprx = "§9[§r§o§bCloudEssentials§r§9] ";
+    public static String Eprx = Methods.getPrefix();
 
     public static void kickAll(String reason, Player WhoWasIt, boolean Console) {
         if (Console) {

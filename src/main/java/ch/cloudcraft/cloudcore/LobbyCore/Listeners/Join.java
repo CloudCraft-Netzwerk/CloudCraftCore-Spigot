@@ -42,6 +42,7 @@ public class Join implements Listener {
         event.getPlayer().updateInventory();
         event.getPlayer().setHealthScale(2.0);
         event.getPlayer().setSaturation(20);
+        event.getPlayer().setAllowFlight(true);
     }
 
     @EventHandler

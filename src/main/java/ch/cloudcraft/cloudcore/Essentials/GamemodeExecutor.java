@@ -1,5 +1,6 @@
 package ch.cloudcraft.cloudcore.Essentials;
 
+import ch.cloudcraft.cloudcore.LobbyCore.Methods.Methods;
 import ch.cloudcraft.cloudcore.utils.QueryPlayer;
 import org.bukkit.GameMode;
 import org.bukkit.command.Command;
@@ -9,7 +10,7 @@ import org.bukkit.entity.Player;
 
 public class GamemodeExecutor implements CommandExecutor {
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] args) {
-        String Eprx = "§9[§r§o§bCloudEssentials§r§9] ";
+        String Eprx = Methods.getPrefix();
 
         if (!commandSender.hasPermission("cloudcraft.essentials.gamemode")) {
             commandSender.sendMessage(Eprx + "§cDu besitzt nicht genügend Rechte, um diesen Befehl auszuführen!");

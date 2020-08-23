@@ -1,5 +1,6 @@
 package ch.cloudcraft.cloudcore.Essentials;
 
+import ch.cloudcraft.cloudcore.LobbyCore.Methods.Methods;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -9,7 +10,7 @@ import org.bukkit.entity.Player;
 public class KickAllExecutor implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] args) {
-        String Eprx = "§9[§r§o§bCloudEssentials§r§9] ";
+        String Eprx = Methods.getPrefix();
         if (!commandSender.hasPermission("cloudcraft.essentials.kickall")) {
             commandSender.sendMessage(Eprx + "§cDu besitzt nicht genügend Rechte, um einen Kickall auszuführen!!");
             return true;
