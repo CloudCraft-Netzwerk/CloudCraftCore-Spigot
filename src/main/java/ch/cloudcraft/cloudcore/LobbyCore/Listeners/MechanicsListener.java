@@ -26,7 +26,7 @@ public class MechanicsListener implements Listener {
             }
         }
     }
-
+    @EventHandler
     public void onDamageEntity(EntityDamageEvent event) {
         if (event.getEntity() instanceof Player) {
             Player p = (Player) event.getEntity();
